@@ -1,0 +1,20 @@
+--cpu=Cortex-M4.fp.sp
+".\objects\at32f435_437_clock.o"
+".\objects\at32f435_437_int.o"
+".\objects\main.o"
+".\objects\eeprom.o"
+".\objects\at32f435_437_board.o"
+".\objects\i2c_application.o"
+".\objects\at32f435_437_acc.o"
+".\objects\at32f435_437_crm.o"
+".\objects\at32f435_437_dma.o"
+".\objects\at32f435_437_gpio.o"
+".\objects\at32f435_437_i2c.o"
+".\objects\at32f435_437_usart.o"
+".\objects\at32f435_437_misc.o"
+".\objects\system_at32f435_437.o"
+".\objects\startup_at32f435_437.o"
+--strict --scatter ".\objects\eeprom.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\listings\eeprom.map" -o .\objects\eeprom.axf
